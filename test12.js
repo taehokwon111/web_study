@@ -5,6 +5,7 @@ var PORT = 3000;
 app.set('title', '자세히 보아야 이쁘다');
 app.set('test', '오래 보아야 사랑스럽다.');
 app.set('test2', '너만빼고');
+app.set('test3', 'fuck..');
 
   
 app.get('/', (req, res) => {
