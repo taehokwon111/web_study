@@ -34,21 +34,26 @@ const dataget = axios({
       serviceKey: decodeURIComponent(APIKEY),
       pageNo: 1,
       numOfRows: 10,
-      startCreateDt: 20210910,
-      endCreateDt: 20210911
+      startCreateDt: 20210916,
+      endCreateDt: 20210916
     }
 }).then(r => {
-  console.log(r.data.response.body.items);
+  // console.log(r.data.response.body.items.item);
+  // console.log(typeof r.data.response.body.items.item);
+  let json = parser.xml2json("<eds>test?</eds?");
+  console.log(json);
 
-  const $ = cheerio.load(r.data.response.body.items);
+  // var obj = {
+  //   name: 'myObj'
+  // };
+  
+  console.log(  JSON.stringify(r.data.response.body.items.item))
+  // console.log(r.data.response.body.items);
 
+  // const $ = cheerio.load(r.data.response.body.items);
 
-            $('item').each((idx) => {
 
               // xml to json
-              let json = parser.xml2json(xml);
-                console.log(json);
-
-});
+          
 
 });
