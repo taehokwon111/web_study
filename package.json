@@ -1,0 +1,29 @@
+{
+  "name": "web_study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "node-pre-gyp": "^0.17.0",
+    "request": "^2.88.2",
+    "sqlite3": "^5.0.2",
+    "xml2json-light": "^1.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cancermaker/web_study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cancermaker/web_study/issues"
+  },
+  "homepage": "https://github.com/Cancermaker/web_study#readme",
+  "description": ""
+}
