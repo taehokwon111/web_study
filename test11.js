@@ -17,8 +17,8 @@ const dataget = axios({
       serviceKey: decodeURIComponent(APIKEY),
       pageNo: 1,
       numOfRows: 10,
-      startCreateDt: 20210916,
-      endCreateDt: 20210916
+      startCreateDt: 20210922,
+      endCreateDt: 20210922
     }
 }).then(r => {
   // console.log(r.data.response.body.items.item);
@@ -48,4 +48,4 @@ d = JSON.stringify(r.data.response.body.items.item.examCnt);
 setTimeout(() => {
   console.log(`${a}, ${b}, ${c}, ${d}`)
 
-}, 5000);
+}, 1000);
